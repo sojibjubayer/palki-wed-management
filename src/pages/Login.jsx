@@ -1,37 +1,109 @@
-import { Link } from "react-router-dom";
+import { useContext, useRef } from "react";
+import { Link, Navigate } from "react-router-dom";
+import { AuthContext } from "../provider/AuthProvider";
+import toast, { Toaster } from "react-hot-toast";
+
+
 
 
 const Login = () => {
+   
+    const { signIn, signInWithGoogle,user } = useContext(AuthContext);
+    const emailRef = useRef(null)
+    
+
+    const handleLogin = (e) => {
+        e.preventDefault();
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+        e.target.reset();
+        
+         <Navigate to='/'></Navigate>
+        
+        // console.log(email,password);
+
+        //signIn
+        signIn(email, password)
+            .then(result => {
+                console.log(result.user);
+                toast.success('Successfully signed in.');
+                    
+            })
+            .catch(error => {
+                console.error(error)
+                toast.error('Email or Password does not match!')
+
+            })
+
+
+    }
+    const handleForgetPassword = () => {
+        const email = emailRef.current.value;
+        if (!email) {
+            console.log('please provide an email', email);
+            return;
+        }
+        else if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
+            console.log('provide valid email.');
+            return;
+        }
+        
+    }
+
+    const handleSignInWithGoogle = () => {
+        signInWithGoogle()
+            .then(result => {
+                console.log(result.user);
+            })
+            .catch()
+    }
+    const handleLogin2 = () => {
+        if(user)
+        return  <Navigate to='/'></Navigate>
+    }
     return (
         <div>
             <div className="hero min-h-screen bg-yellow-400">
-                <div className="hero-content flex-col bg-red-600 ">
+                <div className="hero-content flex-col bg-red-600">
                     <div className="text-center lg:text-left">
-                        <h1 className="text-5xl font-bold text-white">Login now!</h1>
+                        <h1 className="text-5xl font-bold">Login now!</h1>
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                        <form className="card-body">
+                        <form onSubmit={handleLogin} className="card-body">
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>
                                 </label>
-                                <input type="email" placeholder="email" className="input input-bordered" required />
+                                <input
+                                    type="email"
+                                    name="email"
+                                    ref={emailRef}
+                                    placeholder="email"
+                                    className="input input-bordered" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input type="password" placeholder="password" className="input input-bordered" required />
+                                <input type="password" name="password" placeholder="password" className="input input-bordered" required />
                                 <label className="label">
-                                    <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+
+
+                                    <a onClick={handleForgetPassword}
+                                        href="#" className="label-text-alt link link-hover">Forgot password?</a>
+
+
                                 </label>
                             </div>
                             <div className="form-control mt-6">
-                                <button className="btn bg-yellow-500">Login</button>
-
+                                <button onClick={handleLogin2} className="btn btn-primary">Login</button>
+                                <button onClick={handleSignInWithGoogle} className="btn btn-ghost">Google</button>
                             </div>
-                            <p>New here? Please <Link to='/register'><span className="text-blue-600">Register</span></Link></p>
+                            <Link to='/register'>
+                                <p>Have not an account? Please <span className="text-blue-600">Register</span></p>
+                            </Link>
                         </form>
+                        <Toaster />
                     </div>
                 </div>
             </div>
