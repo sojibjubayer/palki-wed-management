@@ -4,6 +4,7 @@ import toast, { Toaster } from 'react-hot-toast';
 import { FaRegEye, FaRegEyeSlash } from 'react-icons/fa';
 // import { sendEmailVerification } from "firebase/auth";
 import { AuthContext } from "../provider/AuthProvider";
+import { updateProfile } from "firebase/auth";
 
 
 const Register = () => {
@@ -15,7 +16,7 @@ const Register = () => {
 
     const handleRegister = (e) => {
         e.preventDefault();
-        // const name = e.target.name.value;
+        const name = e.target.name.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
          e.target.reset();
@@ -46,10 +47,13 @@ const Register = () => {
             .then((result) => {
                 console.log(result.user)
                 toast.success('user created successfully')
-                // sendEmailVerification(result.user)
-                // .then(()=>{
-                //     alert('check your email')
-                // })
+                // update profile
+                updateProfile(result.user,{
+                    displayName:name,
+                    photoURL: "https://example.com/jane-q-user/profile.jpg"
+                })
+                .then(()=>console.log('user craeted successfully'))
+                .catch()
             }
             )
             .catch((error) => {

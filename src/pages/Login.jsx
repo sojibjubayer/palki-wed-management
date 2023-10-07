@@ -1,5 +1,5 @@
 import { useContext, useRef } from "react";
-import { Link, Navigate } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import toast, { Toaster } from "react-hot-toast";
 
@@ -7,19 +7,19 @@ import toast, { Toaster } from "react-hot-toast";
 
 
 const Login = () => {
-   
-    const { signIn, signInWithGoogle,user } = useContext(AuthContext);
+
+    const { signIn, signInWithGoogle, user } = useContext(AuthContext);
     const emailRef = useRef(null)
-    
+    const navigate = useNavigate()
+
 
     const handleLogin = (e) => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
-        e.target.reset();
-        
-         <Navigate to='/'></Navigate>
-        
+
+        <Navigate to='/'></Navigate>
+
         // console.log(email,password);
 
         //signIn
@@ -27,7 +27,11 @@ const Login = () => {
             .then(result => {
                 console.log(result.user);
                 toast.success('Successfully signed in.');
-                    
+                // e.target.reset();
+                navigate('/')
+
+
+
             })
             .catch(error => {
                 console.error(error)
@@ -47,7 +51,7 @@ const Login = () => {
             console.log('provide valid email.');
             return;
         }
-        
+
     }
 
     const handleSignInWithGoogle = () => {
@@ -58,8 +62,8 @@ const Login = () => {
             .catch()
     }
     const handleLogin2 = () => {
-        if(user)
-        return  <Navigate to='/'></Navigate>
+        if (user)
+            return <Navigate to='/'></Navigate>
     }
     return (
         <div>

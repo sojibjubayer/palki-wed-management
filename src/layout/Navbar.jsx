@@ -28,8 +28,8 @@ const Navbar = () => {
                         <img src={navlogo} className="w-16 mr-[200px]" alt="" />
                     </div>
                     <ul className="flex gap-10 text-white font-bold">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about">About Us</a></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/about">About Us</Link></li>
                         <li onMouseEnter={toggleServices} onMouseLeave={toggleServices}>
                             <div className="flex items-center gap-1">
                                 <a href="#">Services </a>
@@ -46,22 +46,24 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div>
-                    <Link to='/login'>
-                        <div className=" ">
+                    
+                        <div className=" flex items-center ">
+                            <div className="text-white">
                             {
-                                user && user.email
+                                user && user.displayName
                             }
+                            </div>
 
                             {
                                 user ?
-                                    <Link onClick={handleLogOut} to='/'><button className="btn">Log Out</button></Link>
+                                    <Link to='/' onClick={handleLogOut} ><button className="btn ml-3">Log Out</button></Link>
                                     :
-                                    <Link to='/login'><button className="btn">Login</button></Link>
+                                    <Link to='/login'><button className="btn ml-3">Login</button></Link>
 
                             }
 
                         </div>
-                    </Link>
+                    
                 </div>
             </nav>
         </div>
