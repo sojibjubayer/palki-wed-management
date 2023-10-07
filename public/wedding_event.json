@@ -2,7 +2,7 @@
     {
         "id": 1,
         "image": "https://i.ibb.co/R3gHK3f/holud.webp",
-        "name": "Mehndi or Haldi ceremony",
+        "name": "Mehndi or Haldi Ceremony",
         "price": "5000",
         "short_details": "Celebrate the Vibrant Mehndi or Haldi Ceremony: Immerse yourself in the rich cultural traditions of these pre-wedding rituals. ",
         "description": "Health is a state of physical, mental, and social well-being where individuals are free from illness and injury. It encompasses regular exercise, a balanced diet, adequate sleep, and emotional stability. Maintaining good health is essential for a fulfilling life, as it enables us to pursue our goals, engage in daily activities, and enjoy meaningful relationships. Regular health check-ups and preventive measures, such as vaccinations and stress management, play a pivotal role in preserving well-being. Prioritizing health ensures longevity and a higher quality of life, promoting overall happiness and productivity."
@@ -48,6 +48,33 @@
         "id": 6,
         "image": "https://i.ibb.co/8dBsmrg/light.jpg",
         "name": "Wedding Lighting Decoration",
+        "price": "8000",
+        "short_details": "Transform Your Wedding Venue with Enchanting Lighting Decor. Illuminate your love story with the magic of carefully curated lighting designs. ",
+        "description": "Used Clothing Drive is a community initiative aimed at collecting gently worn clothing items from individuals or organizations to redistribute to those in need. These drives promote sustainability by reducing textile waste and provide essential clothing to disadvantaged individuals and families. Donated items are typically cleaned, sorted, and distributed to local shelters or charities. Used Clothing Drives not only offer practical support but also foster a sense of goodwill and cooperation within communities and eco-friendly world."
+        
+    },
+    {
+        "id": 7,
+        "image": "https://i.ibb.co/CHY03hG/birthday.jpg",
+        "name": "Birthday Parties",
+        "price": "8000",
+        "short_details": "Transform Your Wedding Venue with Enchanting Lighting Decor. Illuminate your love story with the magic of carefully curated lighting designs. ",
+        "description": "Used Clothing Drive is a community initiative aimed at collecting gently worn clothing items from individuals or organizations to redistribute to those in need. These drives promote sustainability by reducing textile waste and provide essential clothing to disadvantaged individuals and families. Donated items are typically cleaned, sorted, and distributed to local shelters or charities. Used Clothing Drives not only offer practical support but also foster a sense of goodwill and cooperation within communities and eco-friendly world."
+        
+    },
+    {
+        "id": 8,
+        "image": "https://i.ibb.co/DRst4CF/anniversary.jpg",
+        "name": "Anniversaries Parties",
+        "price": "8000",
+        "short_details": "Transform Your Wedding Venue with Enchanting Lighting Decor. Illuminate your love story with the magic of carefully curated lighting designs. ",
+        "description": "Used Clothing Drive is a community initiative aimed at collecting gently worn clothing items from individuals or organizations to redistribute to those in need. These drives promote sustainability by reducing textile waste and provide essential clothing to disadvantaged individuals and families. Donated items are typically cleaned, sorted, and distributed to local shelters or charities. Used Clothing Drives not only offer practical support but also foster a sense of goodwill and cooperation within communities and eco-friendly world."
+        
+    },
+    {
+        "id": 9,
+        "image": "https://i.ibb.co/3cSCh2d/retirement-party.jpg",
+        "name": "Retirement Parties",
         "price": "8000",
         "short_details": "Transform Your Wedding Venue with Enchanting Lighting Decor. Illuminate your love story with the magic of carefully curated lighting designs. ",
         "description": "Used Clothing Drive is a community initiative aimed at collecting gently worn clothing items from individuals or organizations to redistribute to those in need. These drives promote sustainability by reducing textile waste and provide essential clothing to disadvantaged individuals and families. Donated items are typically cleaned, sorted, and distributed to local shelters or charities. Used Clothing Drives not only offer practical support but also foster a sense of goodwill and cooperation within communities and eco-friendly world."

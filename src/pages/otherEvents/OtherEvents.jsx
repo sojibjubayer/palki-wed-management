@@ -1,8 +1,8 @@
-import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 
-const EventCards = ({ event }) => {
-    // console.log(event);
+import PropTypes from 'prop-types';
+
+
+const OtherEvents = ({event}) => {
     const {name,image,short_details,price} = event;
     return (
         <div>
@@ -15,10 +15,7 @@ const EventCards = ({ event }) => {
                         <p className='p-2 rounded text-white font-semibold bg-pink-500 w-2/3 '>Price starts from: {price} TK </p>
                     </div>
                     <div className="card-actions ">
-                    <Link to={`/${name}`}>
                         <button className="btn bg-yellow-400 text-white w-full hover:text-green-500">View Details</button>
-
-                        </Link>
                     </div>
                 </div>
             </div>
@@ -26,8 +23,8 @@ const EventCards = ({ event }) => {
     );
 };
 
-EventCards.propTypes = {
+OtherEvents.propTypes = {
     event: PropTypes.object
 };
 
-export default EventCards;
+export default OtherEvents;

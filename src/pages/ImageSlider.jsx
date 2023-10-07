@@ -1,11 +1,14 @@
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+
+//image import for slide
 import palki from '../assets/1.png'
 import entrance from '../assets/2.jpg'
 import reception from '../assets/3.webp'
@@ -26,6 +29,7 @@ const ImageSlider = () => {
     navigation
     pagination={{ clickable: true }}
     scrollbar={{ draggable: true }}
+    autoplay={{delay:1000}}
     onSwiper={(swiper) => console.log(swiper)}
     onSlideChange={() => console.log('slide change')}
   >

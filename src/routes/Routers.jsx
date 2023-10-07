@@ -11,6 +11,7 @@ import ReceptionStage from "../pages/details/ReceptionStage";
 import CarDecoration from "../pages/details/CarDecoration";
 import GroomBride from "../pages/details/GroomBride";
 import Lighting from "../pages/details/Lighting";
+import OtherEvents from "../pages/otherEvents/OtherEvents";
 
 const router = createBrowserRouter([
     {
@@ -34,29 +35,35 @@ const router = createBrowserRouter([
                 path:'register',
                 element:<Register></Register>
             },
+            //private routes
             {
-                path:'/mehendi',
-                element:<Mehendi></Mehendi>
+                path:'/Mehndi or Haldi Ceremony',
+                element:<PrivateRouters><Mehendi></Mehendi></PrivateRouters>
             },
             {
-                path:'entrance',
-                element:<EntranceDecoration></EntranceDecoration>
+                path:'/Wedding Entrance Decoration',
+                element:<PrivateRouters><EntranceDecoration></EntranceDecoration></PrivateRouters>
             },
             {
-                path:'reception',
-                element:<ReceptionStage></ReceptionStage>
+                path:'/Reception Stage Decoration',
+                element:<PrivateRouters><ReceptionStage></ReceptionStage></PrivateRouters>
             },
             {
-                path:'car-decoration',
-                element:<CarDecoration></CarDecoration>
+                path:'/Wedding Car Decoration',
+                element:<PrivateRouters><CarDecoration></CarDecoration></PrivateRouters>
             },
             {
-                path:'groom-bride',
-                element:<GroomBride></GroomBride>
+                path:'/Groom and Bride Attire',
+                element:<PrivateRouters><GroomBride></GroomBride></PrivateRouters>
             },
             {
-                path:'lighting',
-                element:<Lighting></Lighting>
+                path:'/Wedding Lighting Decoration',
+                element:<PrivateRouters><Lighting></Lighting></PrivateRouters>
+            },
+            {
+                path:'other-events',
+                element:<OtherEvents></OtherEvents>,
+               
             }
             // {
             //     path:'/',
