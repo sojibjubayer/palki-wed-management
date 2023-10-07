@@ -24,7 +24,7 @@ const Navbar = () => {
 
             <nav className="bg-red-600 px-3 py-4 flex items-center justify-between">
                 <div className="flex items-center">
-                    <div >
+                    <div className="hidden md:block">
                         <img src={navlogo} className="w-16 mr-[200px]" alt="" />
                     </div>
                     <ul className="flex gap-10 text-white font-bold">
