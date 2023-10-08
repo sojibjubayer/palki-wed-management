@@ -21,7 +21,7 @@ const ImageSlider = () => {
    
 
   return (
-    <Swiper
+    <Swiper 
     // install Swiper modules
     modules={[Navigation, Pagination, Scrollbar, A11y]}
     spaceBetween={50}
@@ -33,11 +33,11 @@ const ImageSlider = () => {
     onSwiper={(swiper) => console.log(swiper)}
     onSlideChange={() => console.log('slide change')}
   >
-    <SwiperSlide>
-        <img src={palki} className='w-full md:w-3/4 h-[80vh] mx-auto ' alt="" />
+    <SwiperSlide >
+        <img data-aos="fade-right" data-aos-duration="2000"  src={palki} className='w-full md:w-3/4 h-[80vh] mx-auto ' alt="" />
     </SwiperSlide>
     <SwiperSlide>
-        <img src={entrance} className='w-full h-[80vh]' alt="" />
+        <img  src={entrance} className='w-full h-[80vh]' alt="" />
     </SwiperSlide>
     <SwiperSlide>
         <img src={reception} className='w-full h-[80vh]' alt="" />

@@ -6,7 +6,12 @@ import {
 import './index.css'
 import router from './routes/Routers.jsx';
 import AuthProvider from './provider/AuthProvider';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
 
+
+
+AOS.init(); // Initialize AOS
 
 
 

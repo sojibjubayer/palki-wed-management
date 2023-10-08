@@ -9,7 +9,7 @@ const Accordion = () => {
                 <div className="collapse-title text-xl font-medium">
                 Are your services available throughout the country?
                 </div>
-                <div className="collapse-content">
+                <div data-aos="fade-right" data-aos-duration="2000"  className="collapse-content  ">
                     <p>Yes, We cover 64 district with our services.</p>
                 </div>
             </div>
@@ -18,7 +18,7 @@ const Accordion = () => {
                 <div className="collapse-title text-xl font-medium">
                     Can we pay with bank card?
                 </div>
-                <div className="collapse-content">
+                <div  className="collapse-content">
                     <p>Yes,we accept any kind of bank card.</p>
                 </div>
             </div>
