@@ -20,7 +20,7 @@ console.log(greetign);
 #### Answer: B: `ReferenceError: greetign is not defined`
 
 
-<i>WExplanation: In this code, greetign is not declared as a variable, and there is a typo in the variable name. When we run this code, we will get `ReferenceError: greetign is not defined` error.</i>
+<i>Explanation: In this code, greetign is not declared as a variable, and there is a typo in the variable name. `greetign` is not declared as a variable anywhere in our code. JavaScript is case-sensitive, so greetign and greeting are treated as two different variables. .When we run this code, we will get `ReferenceError: greetign is not defined` error as trying to assign an empty object to undeclared variable.</i>
 
 </p>
 </details>
@@ -45,8 +45,8 @@ sum(1, "2");
 
 #### Answer: C: `"12"`
 
-<i>In the sum function, you are attempting to add a number (1) and a string ("2") together.
-since the original second argument was a string, JavaScript concatenates the values, resulting in "12".So, the correct answer is C: "12".
+<i>In the sum function, we are attempting to add a number (1) and a string ("2") together.
+But the  second argument is a string, JavaScript concatenates the values, resulting in "12".So, the correct answer is C: "12".
 </i>
 
 </p>
@@ -73,7 +73,7 @@ console.log(food);
 
 #### Answer: A: `['🍕', '🍫', '🥑', '🍔']`
 
-<i>here start with an array called food containing four emoji elements: ["🍕", "🍫", "🥑", "🍔"].
+<i>Here start with an array called food containing four emoji elements: ["🍕", "🍫", "🥑", "🍔"].
 
 Then create an object info with a property favoriteFood, which is initially set to the first element of the food array: "🍕".
 
