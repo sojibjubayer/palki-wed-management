@@ -34,7 +34,7 @@ const ImageSlider = () => {
     onSlideChange={() => console.log('slide change')}
   >
     <SwiperSlide>
-        <img src={palki} className='w-full md:w-3/4 h-[80vh] mx-auto' alt="" />
+        <img src={palki} className='w-full md:w-3/4 h-[80vh] mx-auto ' alt="" />
     </SwiperSlide>
     <SwiperSlide>
         <img src={entrance} className='w-full h-[80vh]' alt="" />
