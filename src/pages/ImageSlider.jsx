@@ -21,7 +21,7 @@ const ImageSlider = () => {
    
 
   return (
-    <Swiper 
+    <Swiper className='h-full'
     // install Swiper modules
     modules={[Navigation, Pagination, Scrollbar, A11y]}
     spaceBetween={50}
@@ -34,25 +34,25 @@ const ImageSlider = () => {
     onSlideChange={() => console.log('slide change')}
   >
     <SwiperSlide >
-        <img data-aos="fade-right" data-aos-duration="2000"  src={palki} className='w-full md:w-3/4 h-[80vh] mx-auto ' alt="" />
+        <img data-aos="fade-right" data-aos-duration="2000"  src={palki} className='w-full md:w-3/4 md:h-[80vh] mx-auto relative' alt="" />
     </SwiperSlide>
     <SwiperSlide>
-        <img  src={entrance} className='w-full h-[80vh]' alt="" />
+        <img  src={entrance} className='w-full md:h-[80vh] ' alt="" />
     </SwiperSlide>
     <SwiperSlide>
-        <img src={reception} className='w-full h-[80vh]' alt="" />
+        <img src={reception} className='w-full md:h-[80vh]' alt="" />
     </SwiperSlide>
     <SwiperSlide>
-        <img src={groom} className='w-full h-[80vh]' alt="" />
+        <img src={groom} className='w-full md:h-[80vh]' alt="" />
     </SwiperSlide>
     <SwiperSlide>
-        <img src={light} className='w-full h-[80vh]' alt="" />
+        <img src={light} className='w-full md:h-[80vh]' alt="" />
     </SwiperSlide>
     <SwiperSlide>
-        <img src={cardecoration} className='w-full h-[80vh]' alt="" />
+        <img src={cardecoration} className='w-full md:h-[80vh]' alt="" />
     </SwiperSlide>
     <SwiperSlide>
-        <img src={holud} className='w-full h-[80vh]' alt="" />
+        <img src={holud} className='w-full md:h-[80vh]' alt="" />
     </SwiperSlide>
     
    

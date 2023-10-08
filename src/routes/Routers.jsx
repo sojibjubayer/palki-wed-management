@@ -12,6 +12,9 @@ import CarDecoration from "../pages/details/CarDecoration";
 import GroomBride from "../pages/details/GroomBride";
 import Lighting from "../pages/details/Lighting";
 import OtherEvents from "../pages/otherEvents/OtherEvents";
+import Birthday from "../pages/otherEvents/Birthday";
+import Anniversary from "../pages/otherEvents/Anniversary";
+import Retirement from "../pages/otherEvents/Retirement";
 
 const router = createBrowserRouter([
     {
@@ -61,9 +64,22 @@ const router = createBrowserRouter([
                 element:<PrivateRouters><Lighting></Lighting></PrivateRouters>
             },
             {
-                path:'other-events',
+                path:'/other-events',
                 element:<OtherEvents></OtherEvents>,
                
+            },
+            {
+                path:'/7',
+                element:<Birthday></Birthday>
+
+            },
+            {
+                path:'/8',
+                element:<Anniversary></Anniversary>
+            },
+            {
+                path:'/9',
+                element:<Retirement></Retirement>
             }
             // {
             //     path:'/',

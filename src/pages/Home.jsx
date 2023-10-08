@@ -14,11 +14,11 @@ const Home = () => {
 
     return (
         <div className="mt-5">
-            <div>
+            <div className="relative">
                 <ImageSlider></ImageSlider>
             </div>
             <div>
-                <h2 className="mt-10 text-3xl font-bold p-2 rounded-sm text-white bg-pink-600 md:w-1/4">Our Services</h2>
+                <h2 className="mt-10 text-2xl md:text-3xl font-bold p-2 rounded-sm text-white bg-pink-600 md:w-1/4">Our Services</h2>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-5 py-7'>
 
@@ -30,7 +30,7 @@ const Home = () => {
 
 
 
-            <h2 className="mt-10 text-3xl font-bold p-2 rounded-sm text-pink-600 bg-white border border-pink-600 md:w-1/4">Our Other Services</h2>
+            <h2 className="mt-10 text-2xl md:text-3xl font-bold p-2 rounded-sm text-yellow-700 bg-white border border-yellow-600 md:w-1/4">Our Other Services</h2>
             <div className='grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-5 py-7'>
                 {
                     events?.slice(-3).map(event => <OtherEvents key={event.id} event={event}></OtherEvents>)

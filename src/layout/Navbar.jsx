@@ -53,7 +53,7 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <nav className="md:bg-red-600 px-3 md:flex items-center justify-between">
+            <nav className="md:bg-pink-700 px-3 md:flex items-center justify-between">
                 <div className="flex items-center">
                     <div className="hidden md:block">
                         <img src={navlogo} className="w-16 h-16 mr-[200px]" alt="" />
