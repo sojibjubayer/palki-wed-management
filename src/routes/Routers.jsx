@@ -15,11 +15,13 @@ import OtherEvents from "../pages/otherEvents/OtherEvents";
 import Birthday from "../pages/otherEvents/Birthday";
 import Anniversary from "../pages/otherEvents/Anniversary";
 import Retirement from "../pages/otherEvents/Retirement";
+import NotFound from "../pages/NotFound";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <Roots></Roots>,
+        errorElement:<NotFound></NotFound>,
         children: [
             {
                 path: '/',
@@ -80,7 +82,8 @@ const router = createBrowserRouter([
             {
                 path:'/9',
                 element:<Retirement></Retirement>
-            }
+            },
+           
             // {
             //     path:'/',
             //     element:<EventCards></EventCards>
