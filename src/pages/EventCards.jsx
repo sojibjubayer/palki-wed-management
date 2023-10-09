@@ -6,7 +6,7 @@ const EventCards = ({ event }) => {
     const { name, image, short_details, price } = event;
     return (
         <div>
-            <div className="card card-compact w-96 bg-base-100 shadow-xl">
+            <div className="card card-compact  bg-base-100 shadow-xl">
                 <figure><img data-aos="fade-up" data-aos-duration="2000" src={image} className='h-[250px] w-full' alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{name}</h2>

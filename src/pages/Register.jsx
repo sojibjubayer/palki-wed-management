@@ -73,9 +73,9 @@ const Register = () => {
     return (
         <div>
             <div className="hero min-h-screen bg-yellow-400">
-                <div className="hero-content flex-col bg-red-600">
+                <div className="hero-content flex-col bg-pink-600 rounded">
                     <div className="text-center lg:text-left">
-                        <h1 className="text-3xl font-bold">Please Register!</h1>
+                        <h1 className="text-3xl font-bold text-white">Please Register!</h1>
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         <form onSubmit={handleRegister} className="card-body">
@@ -114,9 +114,7 @@ const Register = () => {
                                         }
                                     </span>
                                 </div>
-                                <label className="label">
-                                    <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-                                </label>
+                               
                             </div>
                             {/* terms and conditions */}
                             <div className=" flex">
