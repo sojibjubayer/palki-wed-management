@@ -1,5 +1,5 @@
 
-[Palki Wed management](https://www.example.com)
+[Palki Wed management](https://palki-wed-management.web.app/)
 
 # Project features
 
