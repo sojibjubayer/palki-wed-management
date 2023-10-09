@@ -1,3 +1,6 @@
+
+[Palki Wed management](https://www.example.com)
+
 # Project features
 
 - In HomePage user can see navbar with essential menu items,Here user can go through our main services with other services.There also have a part of common questions and answers. 
@@ -8,6 +11,6 @@
 
 - The unregistered users can visit our other services.And the service details.
 
--There are  two private routes ,only the registered user can see the priate route.o unregistered users the private route won't visible.
+- There are  two private routes ,only the registered user can see the priate route.o unregistered users the private route won't visible.
 
 

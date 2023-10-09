@@ -26,6 +26,7 @@ const Login = () => {
         signIn(email, password)
             .then(result => {
                 console.log(result.user);
+                
                 toast.success('Successfully signed in.');
                 // e.target.reset();
                 navigate('/')
@@ -68,7 +69,7 @@ const Login = () => {
     return (
         <div>
             <div className="hero min-h-screen bg-yellow-400">
-                <div className="hero-content flex-col bg-red-600">
+                <div className="hero-content flex-col bg-pink-600 rounded">
                     <div className="text-center lg:text-left">
                         <h1 className="text-5xl font-bold">Login now!</h1>
                     </div>
@@ -101,7 +102,8 @@ const Login = () => {
                             </div>
                             <div className="form-control mt-6">
                                 <button onClick={handleLogin2} className="btn btn-primary">Login</button>
-                                <button onClick={handleSignInWithGoogle} className="btn btn-ghost">Google</button>
+                                <button onClick={handleSignInWithGoogle} 
+                                className="btn btn-ghost mt-3 bg-green-800 text-white">Login with Google</button>
                             </div>
                             <Link to='/register'>
                                 <p>Have not an account? Please <span className="text-blue-600">Register</span></p>

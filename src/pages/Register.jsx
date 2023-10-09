@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import toast, { Toaster } from 'react-hot-toast';
 import { FaRegEye, FaRegEyeSlash } from 'react-icons/fa';
 // import { sendEmailVerification } from "firebase/auth";
@@ -12,18 +12,20 @@ const Register = () => {
     const { createUser } = useContext(AuthContext);
     const [registerError, setRegisterError] = useState('')
     const [showPassword, setShowPassword] = useState(false)
+    const navigate = useNavigate()
 
 
     const handleRegister = (e) => {
         e.preventDefault();
         const name = e.target.name.value;
+        const photoURL = e.target.photoURL.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
-         e.target.reset();
+        e.target.reset();
         setRegisterError('')
-        
 
-      
+
+
         if (password.length < 6) {
             setRegisterError('password should be al least 6 characters')
             toast.error('password should be al least 6 characters')
@@ -48,12 +50,16 @@ const Register = () => {
                 console.log(result.user)
                 toast.success('user created successfully')
                 // update profile
-                updateProfile(result.user,{
-                    displayName:name,
-                    photoURL: "https://example.com/jane-q-user/profile.jpg"
+                updateProfile(result.user, {
+                    displayName: name,
+                    photoURL: photoURL,
                 })
-                .then(()=>console.log('user craeted successfully'))
-                .catch()
+                    .then(() => {
+                        toast.success('Successfully Registered.');
+                        navigate('/')
+
+                    })
+                    .catch()
             }
             )
             .catch((error) => {
@@ -83,7 +89,13 @@ const Register = () => {
                                 <label className="label">
                                     <span className="label-text">Name</span>
                                 </label>
-                                <input type="text" name="name" placeholder="name" className="input input-bordered" />
+                                <input type="text" name="name" placeholder="name" className="input input-bordered" required />
+                            </div>
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text">Photo URL</span>
+                                </label>
+                                <input type="text" name="photoURL" placeholder="name" className="input input-bordered" />
                             </div>
                             <div className="form-control">
                                 <label className="label">
@@ -114,7 +126,7 @@ const Register = () => {
                                         }
                                     </span>
                                 </div>
-                               
+
                             </div>
                             {/* terms and conditions */}
                             <div className=" flex">

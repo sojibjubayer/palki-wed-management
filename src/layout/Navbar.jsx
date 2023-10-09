@@ -77,12 +77,14 @@ const Navbar = () => {
                 <div>
 
                     <div className=" flex items-center my-5 md:my-0">
-                        <div className="text-white ">
+                        <div className="text-white flex items-center">
+                            
                             {
-                                user && user.displayName
+                                user && <img className="w-10 h-10 rounded-full mr-1" src={user.photoURL} alt='' />
+
                             }
                             {
-                                user && user.photoURL
+                                user && user.displayName
                             }
                         </div>
 

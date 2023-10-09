@@ -12,7 +12,7 @@ const EventCards = ({ event }) => {
                     <h2 className="card-title">{name}</h2>
                     <p>{short_details}</p>
                     <div>
-                        <p className='p-2 rounded text-white font-semibold bg-yellow-500 w-2/3 '>Price starts from: {price} TK </p>
+                        <p className='p-2 rounded text-white font-semibold bg-yellow-500 w-2/3 '>Price : {price} TK </p>
                     </div>
                     <div className="card-actions ">
                         <Link to={`/${name}`}>
