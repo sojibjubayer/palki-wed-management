@@ -16,6 +16,9 @@ import Birthday from "../pages/otherEvents/Birthday";
 import Anniversary from "../pages/otherEvents/Anniversary";
 import Retirement from "../pages/otherEvents/Retirement";
 import NotFound from "../pages/NotFound";
+import Reviews from "../pages/Reviews";
+import Partners from "../pages/private/Partners";
+import ContactUs from "../pages/ContactUs";
 
 const router = createBrowserRouter([
     {
@@ -33,12 +36,24 @@ const router = createBrowserRouter([
                 element:<PrivateRouters><AboutUs></AboutUs></PrivateRouters>
             },
             {
+                path:'/reviews',
+                element:<PrivateRouters><Reviews></Reviews></PrivateRouters>
+            },
+            {
+                path:'partners',
+                element:<Partners></Partners>
+            },
+            {
                 path:'/login',
                 element:<Login></Login>
             },
             {
                 path:'register',
                 element:<Register></Register>
+            },
+            {
+                path:'/contact',
+                element:<ContactUs></ContactUs>
             },
             //private routes
             {
@@ -84,11 +99,7 @@ const router = createBrowserRouter([
                 element:<Retirement></Retirement>
             },
            
-            // {
-            //     path:'/',
-            //     element:<EventCards></EventCards>
-
-            // }
+            
         ]
 
     },

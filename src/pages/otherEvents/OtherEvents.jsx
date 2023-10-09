@@ -7,7 +7,7 @@ const OtherEvents = ({ event }) => {
     const {id, name, image, short_details } = event;
     return (
         <div>
-            <div className="card card-compact w-96 bg-yellow-400 shadow-xl">
+            <div className="card card-compact w-96 bg-yellow-200 shadow-xl">
                 <figure><img data-aos="zoom-in" data-aos-duration="2000" src={image} className='h-[250px] w-full' alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{name}</h2>

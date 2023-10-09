@@ -80,6 +80,13 @@ const Navbar = () => {
                                 </ul>
                             )}
                         </li>
+                        {
+                            user && <>
+                            <li><Link to="/reviews">Reviews</Link></li>
+                            <li><Link to="/partners">Partners</Link></li>
+                            </>
+                        }
+
                     </ul>
                 </div>
                 <div>

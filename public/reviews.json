@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "Md. Hasan Ali",
+        "image": "https://i.ibb.co/ckKhS7n/user-image.png",
+        "address": "Dhaka, Bangladesh",
+        "comment": "Elegant Events provided exceptional planning and made our wedding day absolutely perfect!"
+    },
+    {
+        "id": 2,
+        "name": "Shabnam Akter",
+        "image": "https://i.ibb.co/ckKhS7n/user-image.png",
+        "address": "Chittagong, Bangladesh",
+        "comment": "Dreamy Weddings exceeded our expectations with their beautiful decorations and amazing planning."
+    },
+    {
+        "id": 3,
+        "name": "Rahim Uddin",
+        "image": "https://i.ibb.co/ckKhS7n/user-image.png",
+        "address": "Sylhet, Bangladesh",
+        "comment": "Blissful Occasions did a great job coordinating our event with attention to every detail."
+    },
+    {
+        "id": 4,
+        "name": "Ayesha Begum",
+        "image": "https://i.ibb.co/ckKhS7n/user-image.png",
+        "address": "Rajshahi, Bangladesh",
+        "comment": "Our wedding felt like a fairytale thanks to Royal Weddings' exceptional service and majestic venue."
+    },
+    {
+        "id": 5,
+        "name": "Jamil Ahmed",
+        "image": "https://i.ibb.co/ckKhS7n/user-image.png",
+        "address": "Khulna, Bangladesh",
+        "comment": "Love & Lace Events created a romantic atmosphere that made our wedding day truly special."
+    },
+    {
+        "id": 6,
+        "name": "Faria Khan",
+        "image": "https://i.ibb.co/ckKhS7n/user-image.png",
+        "address": "Barishal, Bangladesh",
+        "comment": "Cherished Moments helped us create unforgettable memories with their magical touch."
+    },
+    {
+        "id": 7,
+        "name": "Imran Hossain",
+        "image": "https://i.ibb.co/ckKhS7n/user-image.png",
+        "address": "Dinajpur, Bangladesh",
+        "comment": "Our wedding day was pure gold, thanks to Golden Celebrations' outstanding services."
+    },
+    {
+        "id": 8,
+        "name": "Nusrat Jahan",
+        "image": "https://i.ibb.co/ckKhS7n/user-image.png",
+        "address": "Comilla, Bangladesh",
+        "comment": "Our wedding was a precious gem thanks to Precious Moments Weddings' attention to detail."
+    },
+    {
+        "id": 9,
+        "name": "Tareq Mahmud",
+        "image": "https://i.ibb.co/ckKhS7n/user-image.png",
+        "address": "Cox's Bazar, Bangladesh",
+        "comment": "Majestic Events truly lives up to its name and made our wedding day majestic."
+    },
+    {
+        "id": 10,
+        "name": "Sonia Islam",
+        "image": "https://i.ibb.co/ckKhS7n/user-image.png",
+        "address": "Rangpur, Bangladesh",
+        "comment": "Romantic Escapes created a perfect escape for our wedding filled with love and romance."
+    }
+]
